@@ -2,6 +2,8 @@ import math
 import sys
 from prep_data import generate_data
 import matplotlib.pyplot as plt
+import numpy as np
+np.arange(0.0, 1.0, 0.1)
 
 def f(area, a, b):
     pred = []
@@ -36,15 +38,18 @@ print(LossF(1, 1, price, area))
 
 loss_list = []
 
-for i in range(10):
+for i in np.arange(0.0, 10.0, 0.1):
     loss_list.append(LossF(i, 1, price, area))
 
 
 plt.clf()
-plt.plot(range(10), loss_list, color="black")
+plt.plot(np.arange(0.0, 10.0, 0.1), loss_list, color="black")
 plt.legend(loc=2)
 plt.xlabel("i")
 plt.ylabel("loss")
 plt.show()
+
+
+
 
     
