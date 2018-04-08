@@ -9,7 +9,7 @@ def h(area, theta):
 
 area, price = generate_data()
 
-predictions = h(area, [0.5, 7])
+predictions = h(area, [7.3, 6.07])
 
 plt.clf()
 plt.scatter(area, price, color="b", label="housing price data")
