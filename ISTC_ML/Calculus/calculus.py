@@ -60,7 +60,8 @@ def gradient_descent(th, price, area, a):
     plt.show()
 
 
-gradient_descent([10, 100], price, area, 0.001)
+gradient_descent([10, 100], price, area, 0.001
+                 )
 
 
 
