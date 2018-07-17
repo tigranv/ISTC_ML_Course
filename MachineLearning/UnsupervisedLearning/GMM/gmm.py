@@ -11,7 +11,8 @@ class GMM:
 
     def fit(self, data):
         """
-        :params data: np.array of shape (..., dim) where dim is number of dimensions of point
+        :params data: np.array of shape (..., dim)
+                                  where dim is number of dimensions of point
         """
         self._initialize_params(data)
         while True:  # TODO: fix
@@ -33,7 +34,8 @@ class GMM:
     def predict(self, data):
         """
         :param data: np.array of shape (..., dim)
-        :return: np.array of shape (...) without dims each element is integer from 0 to k-1
+        :return: np.array of shape (...) without dims
+                         each element is integer from 0 to k-1
         """
         pass
 

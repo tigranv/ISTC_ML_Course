@@ -1,0 +1,4 @@
+Fix TODOs in gmm.py file.
+Run plot_covariances.py with argument --data data's path and -k number of clusters and --name your name.
+
+Results are gmm.py and saved figure.
