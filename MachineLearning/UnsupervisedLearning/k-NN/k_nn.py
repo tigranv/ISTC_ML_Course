@@ -17,5 +17,10 @@ class K_NN:
         :param data: 2D array of floats N points each D dimensions
         :return: array of integers
         """
+        data = np.array(data)
+        shp = data.shape
+        if len(data.shape) == 1:
+            data = data.reshape([1] + list(data.shape))
         # TODO: predict
-        return 0
+        prediction = np.array([0])
+        return prediction.reshape(shp[:-1])
